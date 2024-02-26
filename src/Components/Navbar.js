@@ -22,11 +22,9 @@ const Navbar = () => {
     <nav className="bg-black p-6 flex flex-wrap justify-between items-center">
       <div className="flex items-center lg:ml-80">
         <img src={logo} alt="Logo" className="h-10 sm:mr-9" />
-        <ul className={`hidden sm:flex space-x-10 font-serif 
-        lg:mt-3
-        text-[16px] ${sidebarOpen ? 'hidden' : 'block'}`}>
+        <ul className={`hidden lg:flex sm:flex space-x-10 font-serif lg:mt-3 text-[16px] ${sidebarOpen ? 'hidden' : 'block'} md:hidden`}>
           <li>
-          <Popover 
+            <Popover 
               content={
                 <ul className="text-black">
                   {productList.map((product, index) => (
@@ -68,7 +66,9 @@ const Navbar = () => {
         </svg>
       </button>
       {sidebarOpen && (
-        <div className="sm:hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-end">
+        <div className={`sm:hidden md:hidden
+         fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-end
+          ${sidebarOpen ? 'flex' : 'hidden'}`}>
           <div className="bg-black w-64 flex flex-col p-4">
             <a href="#" className="text-white mb-4">RESOURCES</a>
             <a href="#" className="text-white mb-4">PRODUCTS</a>
@@ -76,7 +76,8 @@ const Navbar = () => {
             <a href="#" className="text-white mb-4">CASE STUDIES</a>
             <button className="bg-[#2080d1] text-white px-6 py-3 rounded">Request Quote</button>
           </div>
-          <button className="absolute top-0 right-0 m-4 text-white" onClick={toggleSidebar}>
+          <button className="absolute 
+          top-0 right-0 m-4 text-white" onClick={toggleSidebar}>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>

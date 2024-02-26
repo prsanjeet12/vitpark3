@@ -22,18 +22,18 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative mb-20 mt-20">
+    <div className="relative  mb-20 mt-20">
       <div className="w-full h-[500px] relative">
        
-        <div className="absolute top-0 left-0 right-0 flex justify-center items-center z-10">
+        <div className="absolute hidden  top-0 left-0 right-0 lg:flex  md:flex justify-center items-center z-10">
           <div className="flex space-x-20 h-20  bg-[#d1d5db]">
             {icons.map((icon, index) => (
               <div
                 key={index}
-                className={`ml-4 mr-4 cursor-pointer ${currentImage === index ? '  bg-gray-200' : 'bg-gray-300'} w-10 h-10`}
+                className={`ml-4 mr-4 cursor-pointer ${currentImage === index ? '  bg-gray-200' : 'bg-gray-300'} w-20 h-20`}
                 onClick={() => handleIconClick(index + 1)}
               >
-                <img src={icon} alt={`Icon ${index + 1}`} className="w-full h-full object-cover" />
+                <img src={icon} alt={`Icon ${index + 1}`} className="w-full h-14 object-cover" />
               </div>
             ))}
           </div>
