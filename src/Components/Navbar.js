@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import logo from './images/site-logo.png';
 import { Popover } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import Logo from './images/vitpark2.png'
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black p-6 flex flex-wrap justify-between items-center">
+    <nav className="bg-white  p-3 flex flex-wrap justify-between items-center">
       <div className="flex items-center lg:ml-80">
-        <img src={logo} alt="Logo" className="h-10 sm:mr-9" />
+        <img src={Logo} alt="Logo" className="h-20 sm:mr-9" />
         <ul className={`hidden lg:flex sm:flex space-x-10 font-serif lg:mt-3 text-[16px] ${sidebarOpen ? 'hidden' : 'block'} md:hidden`}>
           <li>
             <Popover 
@@ -35,32 +35,32 @@ const Navbar = () => {
               placement="bottom" 
               trigger="click"
             >
-              <a href="#" className="text-white">
+              <a href="#" className="text-black">
                 RESOURCES <DownOutlined />
               </a>
             </Popover>
           </li>
           <li>
             <Popover content="Popover content for PRODUCTS" placement="bottom" trigger="click">
-              <a href="#" className="text-white">
+              <a href="#" className="text-black">
                 PRODUCTS <DownOutlined />
               </a>
             </Popover>
           </li>
           <li>
             <Popover content="Popover content for APPLICATIONS" placement="bottom" trigger="click">
-              <a href="#" className="text-white">
+              <a href="#" className="text-black">
                 APPLICATIONS <DownOutlined />
               </a>
             </Popover>
           </li>
-          <li className='text-white'>CASE STUDIES</li>
+          <li className='text-black'>CASE STUDIES</li>
           <li className='pt-[-4px]'>
-            <button className="bg-[#2080d1] md:hidden lg:flex text-white px-10 py-4 rounded">Request for Quote</button>
+            <button className="bg-[#ea2691] md:hidden lg:flex text-black px-10 py-4 rounded">Request for Quote</button>
           </li>
         </ul>
       </div>
-      <button className="sm:hidden text-white" onClick={toggleSidebar}>
+      <button className="sm:hidden text-black" onClick={toggleSidebar}>
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -70,14 +70,14 @@ const Navbar = () => {
          fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-end
           ${sidebarOpen ? 'flex' : 'hidden'}`}>
           <div className="bg-black w-64 flex flex-col p-4">
-            <a href="#" className="text-white mb-4">RESOURCES</a>
-            <a href="#" className="text-white mb-4">PRODUCTS</a>
-            <a href="#" className="text-white mb-4">APPLICATIONS</a>
-            <a href="#" className="text-white mb-4">CASE STUDIES</a>
-            <button className="bg-[#2080d1] text-white px-6 py-3 rounded">Request Quote</button>
+            <a href="#" className="text-black mb-4">RESOURCES</a>
+            <a href="#" className="text-black mb-4">PRODUCTS</a>
+            <a href="#" className="text-black mb-4">APPLICATIONS</a>
+            <a href="#" className="text-black mb-4">CASE STUDIES</a>
+            <button className="bg-[#2080d1] text-black px-6 py-3 rounded">Request Quote</button>
           </div>
           <button className="absolute 
-          top-0 right-0 m-4 text-white" onClick={toggleSidebar}>
+          top-0 right-0 m-4 text-black" onClick={toggleSidebar}>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
