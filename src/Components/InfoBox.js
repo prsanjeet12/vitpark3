@@ -3,7 +3,8 @@ import im from './images/download1.jpeg';
 
 const InfoBox = () => {
   return (
-    <div className="info-box-container mt-[200px] bg-sky-50 w-full md:h-[300px] gap-20 flex flex-col md:flex-row items-center justify-center">
+    <div className="info-box-container mt-[200px] bg-sky-50 w-full md:h-[300px] 
+    gap-20 flex flex-col md:flex-row items-center justify-center">
       <div className="info-content w-full md:w-[90%] lg:w-[70%] xl:w-[60%] 2xl:w-[50%] flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
      
         <div className="text-container md:w-3/5 lg:w-2/3 xl:w-3/4 2xl:w-1/2 text-center md:text-left mb-4 md:mb-0 order-1 md:order-2">

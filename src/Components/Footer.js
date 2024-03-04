@@ -20,16 +20,7 @@ const Footer = () => {
             <li className='mb-1 hover:text-[#ea2691]'>Blog</li>
           </div>
         </ul>
-        <ul className="flex flex-col items-center lg:items-start">
-          <h1 className='mb-8 text-[22px] text-[#ea2691] font-bold'>OUR PRODUCTS</h1>
-          <div className='text-[17px]'>
-            <li className='mb-1 hover:text-[#ea2691]'>MAC125 Moisture Analyzer</li>
-            <li className='mb-1 hover:text-[#ea2691]'>MAC155 Moisture Analyzer</li>
-            <li className='mb-1 hover:text-[#ea2691]'>MAC 116 Steam Analyzer</li>
-            <li className='mb-1 hover:text-[#ea2691]'>Steam Flow Meters</li>
-            <li className='mb-1 hover:text-[#ea2691]'>Steam Flow Rate Transmitters</li>
-          </div>
-        </ul>
+       
         <ul className="flex flex-col items-center lg:items-start">
           <h1 className='mb-8 text-[22px] text-[#ea2691] font-bold'>GET IN TOUCH</h1>
           <div>

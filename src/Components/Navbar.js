@@ -69,12 +69,13 @@ const Navbar = () => {
         <div className={`sm:hidden md:hidden
          fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-end
           ${sidebarOpen ? 'flex' : 'hidden'}`}>
-          <div className="bg-black w-64 flex flex-col p-4">
+          <div className="bg-white w-64 flex flex-col p-4">
             <a href="#" className="text-black mb-4">RESOURCES</a>
             <a href="#" className="text-black mb-4">PRODUCTS</a>
             <a href="#" className="text-black mb-4">APPLICATIONS</a>
             <a href="#" className="text-black mb-4">CASE STUDIES</a>
-            <button className="bg-[#2080d1] text-black px-6 py-3 rounded">Request Quote</button>
+            <button className="bg-[#2080d1] text-black px-6
+             py-3 rounded">Know More</button>
           </div>
           <button className="absolute 
           top-0 right-0 m-4 text-black" onClick={toggleSidebar}>

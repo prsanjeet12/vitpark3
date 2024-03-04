@@ -29,7 +29,7 @@ const HeroSection = () => {
             </button>
             <button className="bg-[#ea2691] text-white px-12 
             py-4 rounded-md ">
-              Moisture Handbook
+            About Us
             </button>
           </div>
         </div>
